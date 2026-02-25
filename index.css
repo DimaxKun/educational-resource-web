@@ -1,0 +1,93 @@
+body {
+    overflow-x: hidden;
+    background: white;
+}
+
+#home {
+    height: 80vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./images/uc-web-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.red-stroke {
+    -webkit-text-stroke: .7px red;
+}
+
+.black-stroke {
+    -webkit-text-stroke: .5px black;
+}
+
+.navbar {
+    background-color: #FAF6E7;
+}
+
+.navbar .nav-link:hover {
+    color: black !important;
+}
+
+.navbar img {
+    height: 80px;
+}
+
+.navbar a {
+    font-size: large;
+    color: #198754;
+}
+
+#btn-header {
+    background-color: #fff0bc;
+
+}
+
+#btn-header:hover {
+    color: black;
+    background-color: #f7d043 !important;
+}
+
+#categories-section{
+    background-color: white;
+}
+
+#about{
+    background-color: #0B291F;
+}
+
+#categories .col-sm-6 {
+    display: flex;
+    justify-content: center;
+}
+
+#intro-text{
+    font-size: 4rem;
+}
