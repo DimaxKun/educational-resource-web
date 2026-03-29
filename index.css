@@ -65,7 +65,7 @@ body {
 }
 
 .navbar img {
-    height: 80px;
+    height: 70px;
 }
 
 .navbar a {
@@ -106,6 +106,9 @@ body {
 @media (min-width: 768px) {
     #intro-text {
         font-size: 4rem;
+    }
+    .navbar img {
+        height: 80px;
     }
 }
 
