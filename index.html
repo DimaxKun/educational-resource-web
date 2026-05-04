@@ -7,276 +7,328 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./index.css">
     <title>UC Resources Hub</title>
 </head>
 
 <body>
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./images/uc_logo_green_ext_h150.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./images/uc_logo_green_ext_h150.png" alt="University of the Cordilleras"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto gap-3">
-                    <a class="nav-link" aria-current="page" href="#home"><strong>Home</strong></a>
-                    <a class="nav-link" href="#categories"><strong>Categories</strong></a>
-                    <a class="nav-link" href="#about"><strong>About</strong></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto gap-2">
+                    <a class="nav-link nav-pill" href="#home">Home</a>
+                    <a class="nav-link nav-pill" href="#categories">Categories</a>
+                    <a class="nav-link nav-pill" href="#about">About</a>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- navbar end -->
 
-    <!-- home start -->
+    <!-- hero -->
     <section class="home-section">
-        <div class="container-fluid p-0">
-            <div id="home" class="row align-items-center py-5 text-center">
-                <div id="introduction" class="col col-md-12 text-md-center text-light">
-                    <h1 class="mb-3 fjalla-one-regular" id="intro-text">Empowering Your Academic Journey</h1>
-                    <h5>Welcome to the Central Resource Hub for the University of the Cordilleras. Access journals,
-                        tools, and community support.</h5>
-                    <div class="mt-5">
-                        <a href="#categories"><button id="btn-header" class="btn rounded-5 p-3">Explore
-                                Categories</button></a>
-                    </div>
+        <div id="home" class="hero-inner d-flex align-items-center justify-content-center text-center text-light">
+            <div class="hero-content">
+                <span class="hero-badge mb-3 d-inline-block">University of the Cordilleras</span>
+                <h1 class="fjalla-one-regular hero-title" id="intro-text">Empowering Your<br>Academic Journey</h1>
+                <p class="hero-subtitle mt-3">Your central hub for journals, tools, and community support.</p>
+                <div class="mt-4 d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="#categories" class="btn btn-hero-primary">Explore Categories <i class="bi bi-arrow-right ms-1"></i></a>
+                    <a href="#resources" class="btn btn-hero-secondary">Browse Resources</a>
                 </div>
             </div>
         </div>
-        <!-- feature start -->
+
+        <!-- featured -->
         <section id="featured-section" class="py-5">
             <div class="container">
-                <div id="featured" class="row">
-                    <h2 class="text-dark text-center mb-4 fjalla-one-regular mb-5">Featured Resources</h2>
-                    <div class="col-sm-6 col-lg-4 pb-5 d-flex">
-                        <div class="card w-100 shadow-lg">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Libraries</h5>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">Resources</h6>
-                                <p class="card-text">
-                                    A vast collection of books and materials to explore, learn, and discover knowledge.
-                                </p>
-                                <a href="https://www.uc-bcf.edu.ph/libraries" target="_blank"
-                                    class="mt-auto btn btn-success">View Resources</a>
+                <div class="section-header text-center mb-5">
+                    <h2 class="fjalla-one-regular">Featured Resources</h2>
+                    <p class="text-muted">Quick access to the most-used academic tools</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-6 col-lg-4 d-flex reveal">
+                        <div class="card feature-card w-100">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="feature-icon mb-3"><i class="bi bi-building"></i></div>
+                                <h5 class="card-title fw-semibold">Libraries</h5>
+                                <p class="card-text text-muted flex-grow-1">A vast collection of books and materials to explore, learn, and discover knowledge.</p>
+                                <a href="https://www.uc-bcf.edu.ph/libraries" target="_blank" class="btn btn-success mt-3">View Resources <i class="bi bi-box-arrow-up-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 pb-5 d-flex">
-                        <div class="card w-100 shadow-lg">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Free Online Resources</h5>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">Resources</h6>
-                                <p class="card-text">
-                                    Easily accessible digital tools and content to support learning anytime, anywhere.
-                                </p>
-                                <a href="https://libraries.uc-bcf.edu.ph/free-databases/" target="_blank"
-                                    class="mt-auto btn btn-success">View Resources</a>
+                    <div class="col-sm-6 col-lg-4 d-flex reveal">
+                        <div class="card feature-card w-100">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="feature-icon mb-3"><i class="bi bi-globe2"></i></div>
+                                <h5 class="card-title fw-semibold">Free Online Resources</h5>
+                                <p class="card-text text-muted flex-grow-1">Easily accessible digital tools and content to support learning anytime, anywhere.</p>
+                                <a href="https://libraries.uc-bcf.edu.ph/free-databases/" target="_blank" class="btn btn-success mt-3">View Resources <i class="bi bi-box-arrow-up-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 pb-5 d-flex">
-                        <div class="card w-100 shadow-lg">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Open Educational Resources</h5>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">Resources</h6>
-                                <p class="card-text">
-                                    High-quality teaching and learning materials freely available for everyone.
-                                </p>
-                                <a href="https://libraries.uc-bcf.edu.ph/open-educational-resources-2/" target="_blank"
-                                    class="mt-auto btn btn-success">View Resources</a>
+                    <div class="col-sm-6 col-lg-4 d-flex reveal">
+                        <div class="card feature-card w-100">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="feature-icon mb-3"><i class="bi bi-book-half"></i></div>
+                                <h5 class="card-title fw-semibold">Open Educational Resources</h5>
+                                <p class="card-text text-muted flex-grow-1">High-quality teaching and learning materials freely available for everyone.</p>
+                                <a href="https://libraries.uc-bcf.edu.ph/open-educational-resources-2/" target="_blank" class="btn btn-success mt-3">View Resources <i class="bi bi-box-arrow-up-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- feature end -->
     </section>
-    <!-- home end -->
 
-
-    <!-- categories start -->
+    <!-- categories -->
     <section id="categories-section" class="py-5">
         <div class="container">
-            <div id="categories" class="row">
-                <h2 class="text-dark text-center mb-4 fjalla-one-regular mb-5">Categories</h2>
-                <div class="col-sm-6 col-lg-4 pb-5">
-                    <div class="card shadow-lg" style="width: 20rem;">
-                        <img src="./images/image-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="text-dark card-title gravitas-one-regular">Accountancy</h5>
-                            <p class="card-text">Comprehensive materials for mastering finance, auditing, and accounting principles.</p>
-                            <a href="https://libraries.uc-bcf.edu.ph/open-access-databases-per-program/" target="_blank" class="card-link btn btn-outline-success">Resources</a>
-                            <a href="https://www.uc-bcf.edu.ph/college/of/accountancy" target="_blank" class="card-link btn btn-outline-success">View Course</a>
+            <div id="categories" class="section-header text-center mb-5">
+                <h2 class="fjalla-one-regular">Categories</h2>
+                <p class="text-muted">Browse resources by college or program</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-6 col-lg-4 d-flex reveal">
+                    <div class="card category-card w-100">
+                        <div class="card-img-wrapper">
+                            <img src="./images/image-1.png" class="card-img-top" alt="Accountancy">
+                            <div class="card-img-overlay-tag">Accountancy</div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text text-muted flex-grow-1">Comprehensive materials for mastering finance, auditing, and accounting principles.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://libraries.uc-bcf.edu.ph/open-access-databases-per-program/" target="_blank" class="btn btn-outline-success btn-sm flex-fill">Resources</a>
+                                <a href="https://www.uc-bcf.edu.ph/college/of/accountancy" target="_blank" class="btn btn-outline-success btn-sm flex-fill">View Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 pb-5">
-                    <div class="card shadow-lg" style="width: 20rem;">
-                        <img src="./images/image-2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="text-dark card-title gravitas-one-regular">Arts & Sciences</h5>
-                            <p class="card-text">This includes diverse resources to explore humanities, social sciences, and natural sciences.</p>
-                            <a href="https://libraries.uc-bcf.edu.ph/arts-and-sciences/" target="_blank" class="card-link btn btn-outline-success">Resources</a>
-                            <a href="https://www.uc-bcf.edu.ph/college/of/arts-and-sciences" target="_blank" class="card-link btn btn-outline-success">View Course</a>
+                <div class="col-sm-6 col-lg-4 d-flex reveal">
+                    <div class="card category-card w-100">
+                        <div class="card-img-wrapper">
+                            <img src="./images/image-2.png" class="card-img-top" alt="Arts & Sciences">
+                            <div class="card-img-overlay-tag">Arts &amp; Sciences</div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text text-muted flex-grow-1">Diverse resources to explore humanities, social sciences, and natural sciences.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://libraries.uc-bcf.edu.ph/arts-and-sciences/" target="_blank" class="btn btn-outline-success btn-sm flex-fill">Resources</a>
+                                <a href="https://www.uc-bcf.edu.ph/college/of/arts-and-sciences" target="_blank" class="btn btn-outline-success btn-sm flex-fill">View Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 pb-5">
-                    <div class="card shadow-lg" style="width: 20rem;">
-                        <img src="./images/image-3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="text-dark card-title gravitas-one-regular">Teacher Education</h5>
-                            <p class="card-text">Tools and guides for effective teaching strategies and professional development.</p>
-                            <a href="https://libraries.uc-bcf.edu.ph/teacher-education/" target="_blank" class="card-link btn btn-outline-success">Resources</a>
-                            <a href="https://www.uc-bcf.edu.ph/college/of/teacher-education" target="_blank" class="card-link btn btn-outline-success">View Course</a>
+                <div class="col-sm-6 col-lg-4 d-flex reveal">
+                    <div class="card category-card w-100">
+                        <div class="card-img-wrapper">
+                            <img src="./images/image-3.png" class="card-img-top" alt="Teacher Education">
+                            <div class="card-img-overlay-tag">Teacher Education</div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text text-muted flex-grow-1">Tools and guides for effective teaching strategies and professional development.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://libraries.uc-bcf.edu.ph/teacher-education/" target="_blank" class="btn btn-outline-success btn-sm flex-fill">Resources</a>
+                                <a href="https://www.uc-bcf.edu.ph/college/of/teacher-education" target="_blank" class="btn btn-outline-success btn-sm flex-fill">View Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 pb-5">
-                    <div class="card shadow-lg" style="width: 20rem;">
-                        <img src="./images/image-4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="text-dark card-title gravitas-one-regular">Nursing</h5>
-                            <p class="card-text">Essential references for patient care, medical knowledge, and clinical practice.</p>
-                            <a href="https://libraries.uc-bcf.edu.ph/nursing/" target="_blank" class="card-link btn btn-outline-success">Resources</a>
-                            <a href="https://www.uc-bcf.edu.ph/college/of/nursing" target="_blank" class="card-link btn btn-outline-success">View Course</a>
+                <div class="col-sm-6 col-lg-4 d-flex reveal">
+                    <div class="card category-card w-100">
+                        <div class="card-img-wrapper">
+                            <img src="./images/image-4.png" class="card-img-top" alt="Nursing">
+                            <div class="card-img-overlay-tag">Nursing</div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text text-muted flex-grow-1">Essential references for patient care, medical knowledge, and clinical practice.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://libraries.uc-bcf.edu.ph/nursing/" target="_blank" class="btn btn-outline-success btn-sm flex-fill">Resources</a>
+                                <a href="https://www.uc-bcf.edu.ph/college/of/nursing" target="_blank" class="btn btn-outline-success btn-sm flex-fill">View Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 pb-5">
-                    <div class="card shadow-lg" style="width: 20rem;">
-                        <img src="./images/image-5.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="text-dark card-title gravitas-one-regular">Information Technology</h5>
-                            <p class="card-text">This includes learning materials on programming, networks, and digital innovation.</p>
-                            <a href="https://libraries.uc-bcf.edu.ph/information-technology-and-computer-science/" target="_blank" class="card-link btn btn-outline-success">Resources</a>
-                            <a href="https://www.uc-bcf.edu.ph/college/of/information-technology-and-computer-science" target="_blank" class="card-link btn btn-outline-success">View Course</a>
+                <div class="col-sm-6 col-lg-4 d-flex reveal">
+                    <div class="card category-card w-100">
+                        <div class="card-img-wrapper">
+                            <img src="./images/image-5.png" class="card-img-top" alt="Information Technology">
+                            <div class="card-img-overlay-tag">Information Technology</div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text text-muted flex-grow-1">Learning materials on programming, networks, and digital innovation.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://libraries.uc-bcf.edu.ph/information-technology-and-computer-science/" target="_blank" class="btn btn-outline-success btn-sm flex-fill">Resources</a>
+                                <a href="https://www.uc-bcf.edu.ph/college/of/information-technology-and-computer-science" target="_blank" class="btn btn-outline-success btn-sm flex-fill">View Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 pb-5">
-                    <div class="card shadow-lg" style="width: 20rem;">
-                        <img src="./images/image-6.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="text-dark card-title gravitas-one-regular">Engineering</h5>
-                            <p class="card-text">The resources cover design, problem-solving, and applied technical skills in engineering.</p>
-                            <a href="https://libraries.uc-bcf.edu.ph/engineering/" target="_blank" class="card-link btn btn-outline-success">Resources</a>
-                            <a href="https://www.uc-bcf.edu.ph/college/of/engineering-and-architecture" target="_blank" class="card-link btn btn-outline-success">View Course</a>
+                <div class="col-sm-6 col-lg-4 d-flex reveal">
+                    <div class="card category-card w-100">
+                        <div class="card-img-wrapper">
+                            <img src="./images/image-6.png" class="card-img-top" alt="Engineering">
+                            <div class="card-img-overlay-tag">Engineering</div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text text-muted flex-grow-1">Resources covering design, problem-solving, and applied technical skills in engineering.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="https://libraries.uc-bcf.edu.ph/engineering/" target="_blank" class="btn btn-outline-success btn-sm flex-fill">Resources</a>
+                                <a href="https://www.uc-bcf.edu.ph/college/of/engineering-and-architecture" target="_blank" class="btn btn-outline-success btn-sm flex-fill">View Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- resources start -->
-        <div id="resources" class="container py-5">
-            <h2 class="text-center mb-5 fjalla-one-regular">Sample Learning Resources</h2>
+
+        <!-- sample resources -->
+        <div id="resources" class="container py-5 mt-3">
+            <div class="section-header text-center mb-5">
+                <h2 class="fjalla-one-regular">Sample Learning Resources</h2>
+                <p class="text-muted">A curated selection of open-access academic materials</p>
+            </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-lg">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Accounting & Marketing</h5>
-                            <p class="text-muted mb-2">Type: Journal</p>
-                            <p class="card-text">
-                                The journal includes a wide range of fields in accounting marketing, Business and Economic, Banking, marketing accounting, and more.
-                            </p>
-                            <a href="https://www.hilarispublisher.com/accounting-marketing.html" target="_blank" class="btn btn-success btn-sm">View Details</a>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card resource-card h-100">
+                        <div class="card-body p-4">
+                            <span class="resource-type-badge mb-3 d-inline-block">Journal</span>
+                            <h5 class="card-title fw-semibold">Accounting &amp; Marketing</h5>
+                            <p class="card-text text-muted">Covers a wide range of fields including accounting, marketing, business, economics, and banking.</p>
+                            <a href="https://www.hilarispublisher.com/accounting-marketing.html" target="_blank" class="btn btn-success btn-sm mt-2">View Details <i class="bi bi-box-arrow-up-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-lg">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Internet Archive</h5>
-                            <p class="text-muted mb-2">Type: Library Website</p>
-                            <p class="card-text">
-                                This library contains downloadable free courses, video lectures, and supplemental materials from universities across the globe.
-                            </p>
-                            <a href="https://archive.org/details/education" target="_blank" class="btn btn-success btn-sm">View Details</a>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card resource-card h-100">
+                        <div class="card-body p-4">
+                            <span class="resource-type-badge mb-3 d-inline-block">Library Website</span>
+                            <h5 class="card-title fw-semibold">Internet Archive</h5>
+                            <p class="card-text text-muted">Free courses, video lectures, and supplemental materials from universities across the globe.</p>
+                            <a href="https://archive.org/details/education" target="_blank" class="btn btn-success btn-sm mt-2">View Details <i class="bi bi-box-arrow-up-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 shadow-lg">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Applied Computing and Informatics</h5>
-                            <p class="text-muted mb-2">Type: Journal</p>
-                            <p class="card-text">
-                                The journal includes a wide range of fields in accounting marketing, Business and Economic, Banking, marketing accounting, and more.
-                            </p>
-                            <a href="https://www.emerald.com/aci?_ga=2.262599564.1832839195.1623979658-1277552777.1623979658" target="_blank" class="btn btn-success btn-sm">View Details</a>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card resource-card h-100">
+                        <div class="card-body p-4">
+                            <span class="resource-type-badge mb-3 d-inline-block">Journal</span>
+                            <h5 class="card-title fw-semibold">Applied Computing &amp; Informatics</h5>
+                            <p class="card-text text-muted">Peer-reviewed research in computing, information systems, and applied technology fields.</p>
+                            <a href="https://www.emerald.com/aci" target="_blank" class="btn btn-success btn-sm mt-2">View Details <i class="bi bi-box-arrow-up-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- resources end -->
     </section>
-    <!-- categories end -->
 
-    <!-- about start -->
-    <section id="about" class="py-5 text-light">
+    <!-- about -->
+    <section id="about" class="py-5">
         <div class="container">
-          <h2 class="text-center mb-5 fjalla-one-regular">About UC</h2>
-          <div class="row g-5">
-            
-            <!-- Mission Statement -->
-            <div id="mission" class="col-md-6">
-              <h3 class="mb-4">Mission Statement</h3>
-              <p>Supporting academic excellence through comprehensive educational resources.</p>
-              <p>Providing accessible learning materials for students and faculty.</p>
-              <p>Promoting research and innovation within the University community.</p>
+            <div class="section-header text-center mb-5">
+                <h2 class="fjalla-one-regular text-light">About UC</h2>
+                <p class="text-light opacity-75">Supporting academic excellence since 1947</p>
             </div>
-            
-            <!-- Contact Information & Form -->
-            <div id="contact" class="col-md-6">
-              <h3 class="mb-4">Contact Information</h3>
-              
-              <!-- Contact Details -->
-              <address>
-                <strong>University of the Cordilleras</strong><br>
-                Baguio City, Philippines<br>
-                Email: <a >email@uc-bcf.edu.ph</a><br>
-                Phone: +63 74 442 3316
-              </address>
-              
-              <form class="mt-4" action="mailto:example@mail.com" method="post" enctype="text/plain">
-                <div class="mb-3">
-                  <label for="contactName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="contactName" name="Name" placeholder="Your full name" required>
+            <div class="row g-5">
+                <div id="mission" class="col-md-6">
+                    <div class="about-card p-4 rounded-3 h-100">
+                        <h3 class="mb-4 text-light fw-semibold"><i class="bi bi-mortarboard me-2 text-success-light"></i>Mission Statement</h3>
+                        <ul class="mission-list">
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Supporting academic excellence through comprehensive educational resources.</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Providing accessible learning materials for students and faculty.</li>
+                            <li><i class="bi bi-check-circle-fill me-2"></i>Promoting research and innovation within the University community.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="contactEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="contactEmail" name="Email" placeholder="you@example.com" required>
+                <div id="contact" class="col-md-6">
+                    <div class="about-card p-4 rounded-3 h-100">
+                        <h3 class="mb-4 text-light fw-semibold"><i class="bi bi-envelope me-2 text-success-light"></i>Contact Us</h3>
+                        <address class="contact-info mb-4">
+                            <div class="contact-item"><i class="bi bi-geo-alt-fill"></i><span>Baguio City, Philippines</span></div>
+                            <div class="contact-item"><i class="bi bi-envelope-fill"></i><a href="mailto:email@uc-bcf.edu.ph">email@uc-bcf.edu.ph</a></div>
+                            <div class="contact-item"><i class="bi bi-telephone-fill"></i><span>+63 74 442 3316</span></div>
+                        </address>
+                        <form action="mailto:example@mail.com" method="post" enctype="text/plain">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label text-light">Name</label>
+                                <input type="text" class="form-control form-control-dark" id="contactName" name="Name" placeholder="Your full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label text-light">Email</label>
+                                <input type="email" class="form-control form-control-dark" id="contactEmail" name="Email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label text-light">Message</label>
+                                <textarea class="form-control form-control-dark" id="contactMessage" name="Message" rows="3" placeholder="Write your message here" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Send Message <i class="bi bi-send ms-1"></i></button>
+                        </form>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="contactMessage" class="form-label">Message</label>
-                  <textarea class="form-control" id="contactMessage" name="Message" rows="4" placeholder="Write your message here" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
             </div>
-      
-          </div>
         </div>
-      </section>
-    <!-- about end -->
+    </section>
 
-    <footer class="bg-dark">
-        <div class="text-center p-3 text-light">
-            © 2026 Mohammad Ali Dimacaling. All rights reserved.
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center py-4">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="./images/uc_logo_green_ext_h150.png" alt="UC Logo" style="height:50px; filter: brightness(0) invert(1);">
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <p class="mb-0 text-light opacity-75 small">© 2026 Mohammad Ali Dimacaling. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="#home" class="footer-link me-3">Home</a>
+                    <a href="#categories" class="footer-link me-3">Categories</a>
+                    <a href="#about" class="footer-link">About</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- back to top -->
+    <button id="backToTop" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        // Navbar scroll effect
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Back to top
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 400));
+        btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
     </script>
 </body>
 </html>
